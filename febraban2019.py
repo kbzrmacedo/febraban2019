@@ -1,5 +1,8 @@
 from flask import Response
-@app.route("/")
+from flask import Flask
+myapp = Flask(__name__)
+
+@myapp.route("/")
 def hello():
     xml = '<Response><Say>Hello world.</Say></Response>'
     return Response(xml, mimetype='text/xml')
