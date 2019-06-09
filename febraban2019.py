@@ -8,4 +8,4 @@ def hello():
     return Response(xml, mimetype='text/xml')
 
 if __name__ == '__main__':
-    app.run()
+    myapp.run()
